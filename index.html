@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/Images/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.css"
+    />
+    <title>Hackathon</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="loader">
+        <h2 class="zoom">KOTHIK</h2>
+        <h1 class="scramble">KOTHIK</h1>
+        <div class="Loading"></div>
+      </div>
+
+      <div class="svgwaala">
+        <div id="dotted">
+          <img id="donut" src="/Images/donut.png" alt="" />
+          <img id="kothik-k" src="/Images/Group 1.svg" alt="" />
+          <img id="kothik-k2" src="/Images/Group 1.svg" alt="" />
+          <img id="kothik-o" src="/Images/O.svg" alt="" />
+          <img id="kothik-t" src="Images/Group 2.svg" alt="" />
+          <img id="kothik-h" src="Images/Group 3.svg" alt="" />
+          <img id="kothik-i" src="Images/I.svg" alt="" />
+
+          <!-- <img id="scooter" src="/Images/scooter.png" alt="" />
+          <img id="table" src="/Images/table.png" alt="" />
+          <img id="hotel" src="/Images/hotel.png" alt="" /> -->
+
+          <img id="shape-1" src="/Images/shape1.png" alt="" />
+        </div>
+        <!-- <img id="stage" src="/Images/background-removebg-preview.png" alt="" /> -->
+        <div id="explore">
+          <h1 onclick="setTimeout( example, 1200)">Explore</h1>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="hero">
+      <div class="lft-hero">
+          <h1>Sign up to harness the <br>power of Crosswire</h1>
+          <h3>Get early access and become part of <br>the new generation of data security.</h3>
+          <a href="">
+              <div class="sign-up">
+                  <h2>Sign up</h2>
+              </div>
+          </a>
+      </div>
+      <div class="cntr-hero">
+        <div class="text-animation">
+          <div class="text-wrapper">
+            <h2>KothiK</h2>
+            <h2>KothiK</h2>
+          </div>
+        </div>
+      </div>
+      <div class="rght-hero">
+          <div class="col" id="col-one">
+              <div class="card">
+                  <img src="data:image/png;base64,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">
+                  <h2>Online Order</h2>
+                  <h2></h2>
+              </div>
+              <div class="card">
+                  <img src="data:image/png;base64,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">
+                  <h2>Food Delivery</h2>
+              </div>
+          </div>
+          <div class="col" id="col-two">
+              <div class="card">
+                  <img src="data:image/png;base64,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">
+                  <h2>Favourite Food</h2>
+              </div>
+              <div class="card">
+                  <img src="data:image/png;base64,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">
+                  <h2>Table Booking</h2>
+              </div>
+              <div class="card">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAExElEQVR4nO2YS4iWVRjHX8saBEHFFGsRQeMiwSQqiD6SIAstCDKsGAvb5CYhDGQKJphaqFAtXIVIRa2Gosuyyy7ositQylsUSW6EavJSk8384tAzdXz93nPe+5zzvs9v+b3f8z/nOf9zec5JkooAVwF7KmrsAUYqxG8E7qqYw7Nl40XjeeDqZKEBngT+BK4rGX8NcA54qkIfPgY+qhC/EzgPrC4Zvwa4AOxIFhLgCuAo//JKSY19Ev89sLhE/C3AnGjcXiL+SuC4xO8tGi8ar0r8CaOXLBTAo/yPmeWrCsYvA361NLaX6MMHVvz7JeIft+KngRUF41cCZy2NR5I2MXs9sBa4BzjMpbwODMz2ZVaPY1WZ73cCB1Px3wKbRD/zTAGWAxuAJ4BZK35WfjPflufIYZO0aXNQ+pYnh4HkbHNYxsaZQ2WACeC0tT34mJElvFHiB7I1mN/zchqYtFbTJzKL8zItMctEY1I08zIjfR5YxcOJAjnMSXsTTRhi9trXCiYzltJ4SA6/vLxlKiAr/gbguwLxJ4FRK37xkFXpwhQrj6VyeBj4o4DGm3YOTRgznmOV/A7clxF/B3AmRyIHgEVD4lcAn+WI/2rYmWY0ZaX4+GV+dQ/RuDt19mWxP2kDYJejE78B6z3x6yThLHZ74pcAnzrizbclHo3dHjPWeeLXS65Z7Erawsx+R0fO+0o/maWuZO7P0QezFWTxRo74Bzxnz6IcW7ipLLO4N2kL4Dnc3OSJNxWIi4kcffjGEf91jvgXPH0YzbHKXYwnbQFMWQ2bQ3ZvqvoZ88Rvs/57Vi6HR6zf3vPEj6QqnalUn2Z8Jadpw/r/EemDfZ/Y5okfs/47LWNgFxxTSVtIKXhODscR64J0QO4CL3vi90lh8A5wvVUB7ZQD/wdP/G3WZPiveJCydH7l3OrR+FEO5vH5NyjgWqnCZn23dvMyITm8bZ5OrDexZ2Q7Ppa0AbBULkNrHFWUs7qQ2TTI+LYaOOS52G0Fnh52Vsnebr5t9VwsD2W9XcmdyWfIfpOr423LjNHSpC3kNvwS8AXwM3CR/nJRxsCMxYvAzW0asTb1fqRczpycUaNNm7HZU64ql1+QH2zKDFO3/51qUPFjxmxLE9tUkUc95VLMrnJjnYZ8mGpAKc67dVZTeZ/clWzmfG98eQ0xpa1SD5N1GPJlTZ1R4PM6DDEXHqUeTtVhSKEbeAl9eqT/V1H90BOib/qdS4jI9TuXEJHrdy4hItfvXEJErt+5hIhcv3MJEbl+5QYVN2pIYKghgaGGBIYaEhhqSGCoIYGhhvTdENV3o4ZEPqF0hRREDSmIrpCeDRgN63cuISLX71xCRK7fuYSIXL9yg4obNSQw1JDAUEMCQw0JDDUkMNSQwFBD+m6I6rtRQyKfULpCCqKGFERXSM8GjIb1O5cQket3LiEi1+9cQkSuX7lBxY0aEhhqSGCoIYGhhgSGGhIYakhgqCF9N0T13aghkU8oXSEFUUMKoiukZwNGw/qdS4jI9TuXEJHrdy4hItev3GDTJD3rf+cSIjDUkMBQQwJDDQkMNSQw1JDAUEMCQw0JDDWkg4acIiCSuC+GP9VhyBYjRCAk8RpixnBzZUMURVEURVEURVGSevkHb4OKDhZ9kusAAAAASUVORK5CYII=">
+                  <h2>Hotel Booking</h2>
+              </div>
+  
+          </div>
+      </div>
+  </div>
+    <div id="main2">
+      <div id="home">
+        <canvas></canvas>
+      </div>
+      <div id="page1"></div>
+    </div> -->
+    <script src="https://unpkg.com/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+      integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"
+      integrity="sha512-A64Nik4Ql7/W/PJk2RNOmVyC/Chobn5TY08CiKEX50Sdw+33WTOpPJ/63bfWPl0hxiRv1trPs5prKO8CpA7VNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="descrambler.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

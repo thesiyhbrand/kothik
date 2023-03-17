@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/Images/favicon.ico">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.css"
+    />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+    <title>Kothik</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <div id="semicircle"></div> -->
+    <div class="upar-menu">
+      <i class="ri-close-fill"></i>
+      <div class="left-upar-menu">
+        <h1 id="abhishek">Home</h1>
+        <h1 id="amarjeet">About</h1>
+        <h1 id="rk">Order</h1>
+        <h1 id="ak">Contact</h1>
+      </div>
+      <div class="right-upar-menu">
+        <div id="all-image-upar">
+          <div id="slider-upar-wala">
+            <div class="menu-img-one"></div>
+        <div class="menu-img-two"></div>
+        <div class="menu-img-three"></div>
+        <div class="menu-img-four"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="enlarge" id="circle">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+          <defs>
+              <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
+          </defs>
+          <circle cx="150" cy="100" r="75" fill="none"/>
+          <g>
+              <use xlink:href="#circlePath" fill="none"/>
+              <text fill="#000">
+                  <textPath xlink:href="#circlePath">Order Food * Kothik * Table Booking *  Room Booking *</textPath>
+              </text>
+          </g>
+      </svg>
+      </div>
+      <div id="semicircle"></div>
+      
+    <!-- <div id="main">
+      <div class="loader">
+        <h2 class="zoom">KOTHIK</h2>
+        <h1 class="scramble">KOTHIK</h1>
+        <div class="Loading"></div>
+      </div>
+
+      <div class="svgwaala">
+        <div id="dotted">
+          <img id="donut" src="/Images/donut.png" alt="" />
+          <img id="kothik-k" src="/Images/Group 1.svg" alt="" />
+          <img id="kothik-k2" src="/Images/Group 1.svg" alt="" />
+          <img id="kothik-o" src="/Images/O.svg" alt="" />
+          <img id="kothik-t" src="Images/Group 2.svg" alt="" />
+          <img id="kothik-h" src="Images/Group 3.svg" alt="" />
+          <img id="kothik-i" src="Images/I.svg" alt="" />
+
+          <img id="scooter" src="/Images/scooter.png" alt="" />
+          <img id="table" src="/Images/table.png" alt="" />
+          <img id="hotel" src="/Images/hotel.png" alt="" />
+
+          <img id="shape-1" src="/Images/shape1.png" alt="" />
+        </div>
+        <img id="stage" src="/Images/background-removebg-preview.png" alt="" />
+        <div id="explore">
+          <h1 onclick="setTimeout( example, 1200)">Explore</h1>
+        </div>
+      </div>
+    </div> -->
+    <div id="nav">
+      <div class="nav-part" id="lft-nav">
+      <div class="logo enlarge"></div>
+        <i class="ri-menu-line"></i>
+        <i class="ri-close-fill"></i>
+      </div>
+      <div id="cntr-nav">
+        <div class="search">
+          <i class="ri-menu-line"></i>
+          <i class="ri-close-fill"></i>
+          <div class="divider"></div>
+          <i class="ri-search-2-line"></i>
+          <div class="search-box"></div>
+          <i class="ri-map-pin-line"></i>
+          <div class="divider"></div>
+          <i class="ri-shopping-bag-line"></i>
+        </div>
+      </div>
+      <div class="nav-part" id="rght-nav">
+        <a class="enlarge" href="#hot-niche">Hotel</a>
+        <a class="enlarge" href="#tab-niche">Table</a>
+        <a class="enlarge" href="#page1">Food</a>
+        <button class="enlarge">Login/Register</button>
+      </div>
+    </div>
+    <div id="hover-slideshow">
+      <div id="slidephoto">
+        <div id="slidephotos">
+          <div class="photu"></div>
+          <div class="photu"></div>
+          <div class="photu"></div>
+          <div class="photu"></div>
+        </div>
+        <div id="view">
+          <h1 class="enlarge">View</h1>
+        </div>
+      </div>
+      <div id="eff">
+        <div class="stext" id="chainn">
+          <h1 class="enlarge">Indian Cuisine</h1>
+          <p class="enlarge">Special dishes of North & South India</p>
+        </div>
+        <div class="line">
+          <div class="hrline"></div>
+        </div>
+        <div class="stext" id="aty">
+          <h1>French Cuisine</h1>
+          <p>Traditions and practices from france</p>
+        </div>
+        <div class="line">
+          <div class="hrline"></div>
+        </div>
+        <div class="stext" id="mic">
+          <h1>Italian Cuisine</h1>
+          <p>Mediterranean cuisine consisiting of ingredients</p>
+        </div>
+        <div class="line">
+          <div class="hrline"></div>
+        </div>
+        <div class="stext" id="tapso">
+          <h1>Chinese Cuisine</h1>
+          <p>Round bottomed crucible shaped dish</p>
+        </div>
+        <div class="line">
+          <div class="hrline"></div>
+        </div>
+      </div>
+      <div id="showm">
+        <div id="btnsm">
+          <h1>Close</h1>
+        </div>
+      </div>
+    </div>
+    <div class="main-abhishek">
+      <div class="diver">
+        <div class="img-div">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><div class="img-one"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="main-txt-front">
+          <h1 class="enlarge" ><span>K</span>THIK</h1>
+          <p class="enlarge">Food Order & Table Booking & Stay <br>All at one Place</p>
+        </div>
+        <div class="front-page-img">
+          <div id="line-effect-1" class="line-effect">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+          <div id="line-effect-2" class="line-effect ">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+          <div id="line-effect-3" class="line-effect ">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+          <div id="line-effect-4" class="line-effect ">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+          <div id="line-effect-5" class="line-effect ">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+            <div class="mandit parallaxed"></div>
+            <div class="mandit-2 parallaxed"></div>
+        </div>
+      </div>
+    </div>
+    <div id="main2">
+      <div id="home">
+        <canvas></canvas>
+      </div>
+      <div class="txt-home modern">
+        <div class="h-container">
+          <h1 class="enlarge" id="h-one">DÉLICIOSA</h1>
+        </div>
+        <div class="h-container">
+          <h1 class="enlarge" id="h-two">FINE DINING</h1>
+        </div>
+        <div class="h-container">
+          <h1 class="enlarge" id="h-three">
+            Taste that makes you <br> go yummmmm. <br />Come for a drink, <br> stay for a meal. <br />
+            From our casa to yours. <br />
+            Feed your happy. <br />
+          </h1>
+        </div>
+      </div>
+      <div id="page1">
+        <div id="one">
+          <div class="timeline">
+            <div class="lft-timeline">
+              <h1 class="enlarge">
+                Healthy & <br />
+                <span>Modern</span>
+              </h1>
+              <div class="white-div">
+                <h4 class="enlarge">
+                  Bringing class to cuisine.
+                  Where every flavor tells a story. Your culinary adventure awaits.
+                  Life is dull without good food.
+                  Hundreds of flavors under one roof.
+                </h4>
+              </div>
+            </div>
+            <div class="rght-timeline">
+              <div id="back-div-img">
+                <div  id="rght-timeline-img" ></div>
+                <!-- <div class="menus-img"></div> -->
+                <div class="gallery-div">
+                  <div class="outline1"></div>
+                  <div class="outline2"></div>
+                  <h1 class="enlarge">Browse Cuisines</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page2">
+      <div id="home2">
+        <canvas></canvas>
+      </div>
+      <div id="tab-niche" class="home2-page">
+        <div  class="middle-page">
+          <!-- <div class="m-div"></div> -->
+          <div class="m-div">
+          </div>
+          <div class="m-div"></div>
+          <div class="m-div"></div>
+        </div>
+        <div class="m-overlay">
+          <div class="m-div1">
+            <h1 class="enlarge">
+              GET DELICIOUS FOOD <br />BY ONE CLICK WITH<br />
+              <span>KOTHIK</span>
+            </h1>
+          </div>
+          <div class="m-div2">
+            <!-- <div class="m-circ"></div> -->
+            <p class="enlarge">
+              “Order food to your door, Discover the best food & drinks in
+              India,
+              <br />
+              Popular cuisines near me, Top Restaurant Chains.
+              <br />
+              Hungry? Late night office? <br />
+              Unexpected Guests? Movie Marathon?<br />
+              <b>Guess What! Kothik is here...</b>
+            </p>
+          </div>
+        </div>
+        <div id="home2-again">
+          <div class="middle-page">
+            <div class="m-div"></div>
+            <div class="m-div"></div>
+            <div class="m-div"></div>
+            <div class="m-div"></div>
+          </div>
+          <div class="m-overlay">
+            <div class="m-overlay-once">
+              <div class="m-div1">
+                <h1 class="enlarge" style="margin-top: 3vw">
+                  Find & Book your table <br />
+                  on any occasion <br />
+                </h1>
+              </div>
+              <div class="m-div2 another2">
+                <p class="enlarge">
+                  “Booking a table has never been so easy with free <br> and instant
+                 
+                  online restaurant reservations across <br />  India, make your online
+                  restaurant <br />
+                  booking now at Kothik.”<br />
+                </p>
+                <div class="m-square">
+                  <div class="m-square-inner"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page3">
+      <div id="home3">
+        <canvas></canvas>
+      </div>
+      <div class="txt-home another">
+        <div class="h-container h-wala">
+          <h1 class="enlarge" id="h-one">restərənt</h1>
+        </div>
+        <div class="h-container h-wala">
+          <h1 class="enlarge" id="h-two">BOOK YOUR DINING</h1>
+        </div>
+        <div class="h-container h-wala">
+          <h1 class="enlarge" id="h-three">
+            Get table reservations <br> directly. Here is kothik for <br> you now book at <br> Anytime & Anywhere.
+          </h1>
+        </div>
+        <div id="newsletter">
+          <div id="email">
+            <h2>
+              <span>DATE | </span><input id="hello" type="date" />
+              <h2>
+                <span>LOCATION | </span
+                ><input type="text" placeholder="Bhopal" />
+                <button>Search</button>
+              </h2>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div id="hot-niche" class="hotel-upper">
+        <div class="hotel-upper-txt">
+          <h1 class="enlarge">Find your next stay</h1>
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <p class="enlarge">Search deals on hotels, homes, and much more...</p>
+          <div class="hotel-search"><h1>Search Hotels</h1></div>
+        </div>
+      </div>
+      <div class="home3-page"></div>
+    </div>
+    <div id="page4">
+      <div id="home4">
+        <canvas></canvas>
+      </div>
+      <div class="home4-page"></div>
+    </div>
+    <div class="responsive1">
+      <div id="home-footer">
+        <canvas></canvas>
+      </div>
+      <div class="home-footer-txt">
+        <div class="txt-home modern-footer">
+          <div class="h-container">
+            <h1 class="enlarge" id="h-one">DÉLICIOSA</h1>
+          </div>
+          <div class="h-container">
+            <h1 class="enlarge" id="h-two">FINE DINING</h1>
+          </div>
+          <div class="h-container">
+            <h1 class="enlarge" id="h-three">
+              Taste that makes you <br> go yummmmm. <br />Come for a drink, <br> stay for a meal. <br />
+              From our casa to yours. <br />
+              Feed your happy. <br />
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="responsive2">
+      <div id="one">
+        <div class="timeline">
+          <div class="lft-timeline">
+            <h1 class="enlarge">
+              Healthy & <br />
+              <span>Modern</span>
+            </h1>
+            <div class="white-div">
+              <h4 class="enlarge">
+                Bringing class to cuisine.
+                Where every flavor tells a story. Your culinary adventure awaits.
+                Life is dull without good food.
+                Hundreds of flavors under one roof.
+              </h4>
+            </div>
+          </div>
+          <div class="rght-timeline">
+            <div id="back-div-img">
+              <div  id="rght-timeline-img" ></div>
+              <!-- <div class="menus-img"></div> -->
+              <div class="gallery-div">
+                <div class="outline1"></div>
+                <div class="outline2"></div>
+                <h1 class="enlarge">Browse Cuisines</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="responsive3">
+      <div id="home2-footer">
+        <canvas></canvas>
+      </div>
+    </div>
+    <div class="responsive4">
+      <div class="home2-footer-txt">
+        <h1 class="enlarge">GET DELICIOUS FOOD <br />BY ONE CLICK WITH<br />
+          KOTHIK</h1>
+          <p class="enlarge">“Order food to your door,<br> Discover the best food & <br> drinks in
+            India. <br><br>
+            Popular cuisines near me, <br> Top Restaurant Chains. <br>
+            Hungry? <br> Late night office? <br>
+            Unexpected Guests? <br> Movie Marathon? <br>
+            <b>Guess What! Kothik is here...</b></p>
+      </div>
+    </div>
+    <div class="responsive5">
+      <div id="home3-footer">
+        <canvas></canvas>
+      </div>
+    </div>
+    <div class="responsive7">
+      <div class="responsive7-txt">
+        <h1 class="enlarge">restərənt</h1>
+        <h2 class="enlarge">Book Your Dining</h2>
+        <p class="enlarge">Get reservations <br> directly. Here is kothik for <br> you now book at <br> Anytime & Anywhwere.</p>
+        <div class="button-res"><h1>Book Now</h1></div>
+      </div>
+    </div>
+    <div class="footer-down">
+      <div class="hotel-upper-txt">
+        <h1>Find your next stay</h1>
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <p class="enlarge">Search deals on hotels, <br> homes, and much more...</p>
+        <div class="hotel-search"><h1>Search Hotels</h1></div>
+      </div>
+    </div>
+    <div class="responsive8">
+      <div id="home4-footer">
+        <canvas></canvas>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="left-footer">
+        <div class="top-footer">
+          <h1 class="enlarge">DON'T MISS ANY UPDATE!</h1>
+          <input id="emailwaala" type="email" placeholder="your email" />
+          <div class="agree">
+            <input type="checkbox" />
+            <p class="enlarge">
+              I agree to the use of my personal data for the purpose sated above
+            </p>
+          </div>
+          <button class="enlarge">SUBSCRIBE</button>
+        </div>
+        <div class="bottom-footer">
+          <h1 class="enlarge">KOTHIK</h1>
+          <h2 class="enlarge">ALL AT ONE PLACE</h2>
+          <p class="enlarge" id="address">Flat no.3, C- Sector, Indrapuri, Bhopal, Madhya Pradesh</p>
+          <a class="enlarge" href="tel:+91 736790056">Tel. +91 7367966056</a>
+          <a class="enlarge" href="mailto:thesiyhbrand@gmail.com">info@kothik.com</a>
+        </div>
+      </div>
+      <div class="right-footer">
+        <ul class="Words">
+          <li class="Words-line">
+            <p>&nbsp;</p>
+            <p>Thanks for</p>
+          </li>
+          <li class="Words-line">
+            <p>Thanks for</p>
+            <p>Visiting</p>
+          </li>
+          <li class="Words-line">
+            <p>Visiting</p>
+            <p>this project</p>
+          </li>
+          <li class="Words-line">
+            <p>this project</p>
+            <p>is made</p>
+          </li>
+          <li class="Words-line">
+            <p>is made</p>
+            <p>by</p>
+          </li>
+          <li class="Words-line">
+            <p>by</p>
+            <p>Team Oreos</p>
+          </li>
+          <li class="Words-line">
+            <p>Team Oreos</p>
+            <p></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="https://unpkg.com/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+      integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"
+      integrity="sha512-A64Nik4Ql7/W/PJk2RNOmVyC/Chobn5TY08CiKEX50Sdw+33WTOpPJ/63bfWPl0hxiRv1trPs5prKO8CpA7VNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="descrambler.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
